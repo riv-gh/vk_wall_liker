@@ -19,7 +19,7 @@ function liker() {
   try {
   var tmp = document.querySelector('.box_title');
   if (!tmp) {
-    var element = document.querySelector('div.wall_text+div.like_wrap>div.like_cont>div.like_btns>a._like:not(.active)')
+    var element = document.querySelector('div.wall_text+div.like_wrap>div.like_cont>div.like_btns>a._like:not(.active):not(.empty)')
     scrollToElement(element,600);
     
     console.log('like!');
